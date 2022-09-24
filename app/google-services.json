@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "471368434294",
+    "project_id": "last-shop-f4120",
+    "storage_bucket": "last-shop-f4120.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471368434294:android:8aad7da8ab303d72d91557",
+        "android_client_info": {
+          "package_name": "app.anshuman.lastshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471368434294-0gpilmk57tcvns3gmqbg88pfl7e7aj2l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM69Do9ZckqyMppeWfJamS5ty_AZJrhQg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "471368434294-0gpilmk57tcvns3gmqbg88pfl7e7aj2l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

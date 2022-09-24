@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLyt"
+    tools:context=".MainActivity">
+
+    <include
+        layout="@layout/layout_background"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/appBar"
+            >
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FC5952"
+                app:navigationIcon="@drawable/menu_icon"
+                app:title="" />
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="9dp"
+            android:src="@drawable/ic_shopping_cart_black_24dp"
+            app:tint="@color/white"
+            android:id="@+id/imgCart"
+            />
+
+        <TextView
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:text="1"
+            android:elevation="4dp"
+            android:background="@drawable/active_dot"
+            android:padding="3dp"
+            android:textSize="11sp"
+            android:backgroundTint="@color/cartColor"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/sf_medium"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="4dp"
+            android:id="@+id/cartCount"
+            android:visibility="gone"
+
+            />
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/appBar"
+            android:fillViewport="true"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true" />
+
+                    <LinearLayout
+                        android:id="@+id/SliderDots"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"/>
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:layout_marginTop="25sp"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    >
+
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/fruitsLyt"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:backgroundTint="@color/borderColor"-->
+
+<!--                        >-->
+
+<!--                        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                            android:layout_width="40dp"-->
+<!--                            android:layout_height="40dp"-->
+<!--                            android:src="@drawable/fruits"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_marginTop="8dp"-->
+<!--                            android:layout_marginBottom="3dp"-->
+<!--                            />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:text="Fruits"-->
+<!--                            android:textSize="15sp"-->
+<!--                            android:gravity="center"-->
+<!--                            android:fontFamily="@font/sf_medium"-->
+<!--                            android:textColor="#BC000000"-->
+<!--                            android:layout_marginBottom="5dp"-->
+<!--                            />-->
+
+
+
+
+
+
+
+
+
+<!--                    </LinearLayout>-->
+                    <LinearLayout
+                        android:id="@+id/detergentLyt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:backgroundTint="@color/borderColor"
+
+                        >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/responsive"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="3dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Electronics"
+                            android:textSize="15sp"
+                            android:gravity="center"
+                            android:fontFamily="@font/sf_medium"
+                            android:textColor="#BC000000"
+                            android:layout_marginBottom="5dp"
+                            />
+
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/vegitableLyt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_marginStart="5dp"
+                        android:backgroundTint="@color/borderColor"
+
+                        >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/vegetables"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="3dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Vegetables"
+                            android:textSize="15sp"
+                            android:gravity="center"
+                            android:fontFamily="@font/sf_medium"
+                            android:textColor="#BC000000"
+                            android:layout_marginBottom="5dp"
+                            />
+
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/milkLyt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+
+                        android:backgroundTint="@color/borderColor"
+
+                        >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/laundry"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="3dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="clothes"
+                            android:textSize="15sp"
+                            android:gravity="center"
+                            android:fontFamily="@font/sf_medium"
+                            android:textColor="#BC000000"
+                            android:layout_marginBottom="5dp"
+                            />
+
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:layout_marginTop="5sp"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="15sp"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/oilLyt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/borderColor"
+
+                        >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/shoes"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="3dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="shoes"
+                            android:textSize="15sp"
+                            android:gravity="center"
+                            android:fontFamily="@font/sf_medium"
+                            android:textColor="#BC000000"
+                            android:layout_marginBottom="5dp"
+                            />
+
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/riceLyt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_marginStart="5dp"
+                        android:backgroundTint="@color/borderColor"
+
+                        >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/makeup"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="3dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Beauty and Grooming"
+                            android:textSize="15sp"
+                            android:gravity="center"
+                            android:fontFamily="@font/sf_medium"
+                            android:textColor="#BC000000"
+                            android:layout_marginBottom="5dp"
+                            />
+
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:orientation="vertical"
+                    tools:listitem="@layout/item_product"
+                    android:id="@+id/recyclerView"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    />
+
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="start"
+        android:id="@+id/navigationView"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer">
+
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

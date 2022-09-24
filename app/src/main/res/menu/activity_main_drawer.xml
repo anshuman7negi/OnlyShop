@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   * Grocery App
+   * https://github.com/quintuslabs/GroceryStore
+   * Created on 18-Feb-2019.
+   * Created by : Santosh Kumar Dash:- http://santoshdash.epizy.com
+   -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_male"
+            android:title="My Profile" />
+    </group>
+
+
+
+    <group
+        android:id="@+id/nav_communication_group2"
+        android:checkableBehavior="single">
+<!--        <item-->
+<!--            android:id="@+id/nav_category"-->
+<!--            android:icon="@drawable/ic_options"-->
+<!--            android:title="Category" />-->
+        <item
+            android:id="@+id/cartItems"
+            android:icon="@drawable/ic_shopping_cart_black_24dp"
+            android:title="Cart" />
+    </group>
+
+
+    <group
+        android:id="@+id/nav_communication_group3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_my_order"
+            android:icon="@drawable/ic_listed_items"
+            android:title="My Order" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+
+
+</menu>

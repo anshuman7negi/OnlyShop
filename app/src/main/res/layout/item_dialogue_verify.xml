@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="1dp"
+        android:id="@+id/cardView"
+        android:layout_centerInParent="true"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Verify email"
+                android:textSize="17sp"
+                android:textStyle="normal"
+                android:fontFamily="@font/sf_regular"
+                android:gravity="center"
+                android:textColor="#BC000000"
+                android:padding="5dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:padding="10dp"
+                android:importantForAutofill="no"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:hint="Email"
+                android:textColorHint="#CC000000"
+                android:inputType="textEmailAddress"
+                android:id="@+id/inputEmail"
+                android:backgroundTint="@color/colorPrimary"
+                android:fontFamily="@font/sf_regular"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send reset mail"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:textStyle="normal"
+                android:fontFamily="@font/sf_medium"
+                android:textColor="@color/white"
+                android:background="@drawable/button_checkout_bg"
+                android:padding="7dp"
+                android:backgroundTint="#E91E63"
+                android:id="@+id/btnSend"
+                android:layout_marginBottom="10dp"
+
+                />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
